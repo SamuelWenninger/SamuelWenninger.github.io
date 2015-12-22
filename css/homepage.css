@@ -1,7 +1,39 @@
-body {
-    background-image: url('https://fadingamericans.files.wordpress.com/2011/05/greenseaturtle.jpg');
+.navbar ul {
+    list-style-type: none;
+    /*Remove browser default settings*/
+    margin: 0;
+    padding: 0;
+    /*Navbar width (defaultly full width)*/
+    width: 200px;
+    background-color: #f1f1f1;
+    /*Full height*/
+    height: 100%;
+    /*Fixed navbar when scrolling*/
+    position: fixed;
+    /*Automatic scrolling in the navbar if too many items*/
+    overflow: auto;
 }
 
-.navbar {
-    color: red;
+.navbar li a {
+    display: block;
+    color: #000;
+    /*Change spacing between items in the navbar*/
+    padding: 8px 0 8px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*
+ Active tab in the navbar has its own highlighting that doesn't change when
+ hovering over it
+ */
+.navbar li a.active {
+    background-color: red;
+    color: white;
+}
+
+/*Other tabs in the navbar have the default highliting when hovered over*/
+.navbar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }
