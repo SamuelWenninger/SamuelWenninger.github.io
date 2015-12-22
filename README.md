@@ -1,2 +1,2 @@
-# SamuelWenninger.github.io
+# samuelwenninger.github.io
 My personal website
