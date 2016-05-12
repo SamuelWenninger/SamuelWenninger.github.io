@@ -20,11 +20,11 @@ function move() {
         move.counter = 0;
     }
     $("body").css("transition", "background-color 1s linear 0s");
-    $("#top, #right, #left, #bottom").css("transition", "opacity 1s linear 0s");
+    $("#top-td, #right-td, #left-td, #bottom-td").css("transition", "opacity 1s linear 0s");
     $(".animate").css("transition", "top 1s linear 0s");
     if (move.counter % 2 == 0) {
         $("body").css("background-color", "#000000");
-        $("#top, #right, #left, #bottom").css("opacity", "0");
+        $("#top-td, #right-td, #left-td, #bottom-td").css("opacity", "0");
         $("body").one(transitionEvent, function(e) {
             e.stopPropagation();
             $("#block").css("top", "100px");
@@ -40,7 +40,7 @@ function move() {
         $("body").one(transitionEvent, function(e) {
             e.stopPropagation();
             $("body").css("background-color", "#FFFFFF");
-            $("#top, #right, #left, #bottom").css("opacity", "1");
+            $("#top-td, #right-td, #left-td, #bottom-td").css("opacity", "1");
         });
         ++move.counter;
     }
