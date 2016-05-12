@@ -93,7 +93,7 @@ tr, td {
     text-align: justify;
     position: absolute;
     top: 250px;
-    width: 500px;
+    width: 750px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
