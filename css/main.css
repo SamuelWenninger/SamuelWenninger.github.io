@@ -1,0 +1,101 @@
+#top, #right, #bottom, #left {
+    /*background-image: url("../images/bbox.jpg");*/
+    /*background-color: blue;*/
+    height: 50px;
+    width: 50px;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+#top {
+    background-image: url("../images/notes.png");
+}
+
+#right {
+    background-image: url("../images/mail.png");
+    vertical-align: bottom;
+}
+
+#bottom {
+    background-image: url("../images/github.png");
+}
+
+#left {
+    background-image: url("../images/linkedin.png");
+}
+
+#center {
+    background-image: url("../images/icon.png");
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.animate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right:-50%;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    transform: translate(-50%, -50%);
+}
+
+table {
+    /*border: 1px solid black;*/
+    text-align: center;
+    margin: 0 auto;
+}
+
+tr, td {
+    text-align: center;
+    padding: 15px;
+    vertical-align: middle;
+    /*border: 1px solid black;*/
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#center:hover {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    height: 170px;
+    width: 170px;
+    background-size: 170px 170px;
+}
+
+#top:hover, #right:hover, #bottom:hover, #left:hover {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    height: 57px;
+    width: 57px;
+    background-size: 57px 57px;
+}
+
+#content {
+    opacity: 0;
+    color: white;
+    text-align: justify;
+    position: absolute;
+    top: 250px;
+    width: 500px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+

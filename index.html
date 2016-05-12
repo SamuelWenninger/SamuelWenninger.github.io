@@ -1,28 +1,50 @@
-<!doctype html>
 <html>
-<head>
-    <link rel="stylesheet" href="css/homepage.css">
-    <title>Samuel Wenninger</title>
-</head>
-<body>
-    <div class="navbar">
-        <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="about/index.html">About</a></li>
-            <li><a href="images/general-resume.pdf">Résumé</a></li>
-            <li><a href="https://github.com/samuelwenninger">Projects</a></li>
-            <li>
-                <a href="https://www.linkedin.com/in/swenninger">LinkedIn</a>
-            </li>
-            <li>
-                <a href="contact-me/index.html">Contact Me</a>
-            </li>
-        </ul>
+  <head>
+    <title>CSS Animation Test</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="block" class="animate">
+      <table>
+        <tr>
+          <td></td>
+          <td>
+            <div id="top" onclick="goToResume();"></div>
+            Resume
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><div id="left" onclick="goToLinkedIn();"></div>LinkedIn</td>
+          <td>
+            <div id="center" onclick="move();"> </div>
+            About Me
+          </td>
+            <td><div id="right" onclick="sendEmail();"></div>Email</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <div id="bottom" onclick="goToGitHub();"></div>
+            GitHub
+          </td>
+          <td></td>
+        </tr>
+      </table>
     </div>
-    <img src="images/me.jpg">
-        <h1>Samuel Wenninger</h1>
-        <p>
-            Welcome to my website!
-        </p>
-</body>
+    <div id="content">
+      <p>
+      Hello World! My name is Samuel Wenninger. I am currently a senior Computer
+      & Systems Engineering and Computer Science dual major at Rensselaer
+      Polytechnic Institute. 
+      </p>
+      <p>
+      If you are an employer, be sure to check out the link to my GitHub page for
+      information on current and/or past projects and my LinkedIn page for
+      more information about me.
+      </p>
+    </div>
+  </body>
 </html>
